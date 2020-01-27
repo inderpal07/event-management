@@ -3,6 +3,7 @@ import { EventModel } from '../common/models/events.model';
 import { EventsService } from '../events.service';
 import {MatSnackBar} from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-create-event',
@@ -15,7 +16,8 @@ export class CreateEventComponent implements OnInit {
   constructor(
     private eventService: EventsService,
     private snackBar: MatSnackBar,
-    private router: Router
+    private router: Router,
+    private location: Location
     ) {
     this.event = new EventModel('', null, '', null, '');
   }
@@ -27,6 +29,10 @@ export class CreateEventComponent implements OnInit {
     this.eventService.createEvent(this.event);
     const snackBarRef = this.snackBar.open('Event Stored');
     this.router.navigate(['/event-list']);
+  }
+
+  back() {
+    this.location.back();
   }
 
 }

@@ -6,7 +6,7 @@
         <mat-card-subtitle>{{event.eventLocation}}</mat-card-subtitle>
         <mat-card-content>
             <img mat-card-image [src]="event.eventImageURL ? event.eventImageURL: './assets/images/profile.jpg'" class="profile-img">
-            <div>Date: {{event.eventDateTime | date: 'dd/MM/yyyy'}}</div>
+            <div>Date: {{event.eventDateTime}}</div>
             <div>Gender allowed: {{event.genderAllowed}}</div>
         </mat-card-content>
     </mat-card>
