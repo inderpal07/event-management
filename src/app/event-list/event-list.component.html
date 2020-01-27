@@ -1,0 +1,13 @@
+<button mat-button (click)="createEvent()">Create Event</button>
+<input type="text" placeholder="Search events" class="search-filter" [(ngModel)]="searchTerm">
+<cdk-virtual-scroll-viewport itemSize="3" class="virtual-scroll-viewport">
+    <mat-card *cdkVirtualFor="let event of events | searchFilter:searchTerm" class="virtual-scroll-viewport-item">
+        <mat-card-title>{{event.eventType}}</mat-card-title>
+        <mat-card-subtitle>{{event.eventLocation}}</mat-card-subtitle>
+        <mat-card-content>
+            <img mat-card-image [src]="event.eventImageURL ? event.eventImageURL: './assets/images/profile.jpg'" class="profile-img">
+            <div>Date: {{event.eventDateTime | date: 'dd/MM/yyyy'}}</div>
+            <div>Gender allowed: {{event.genderAllowed}}</div>
+        </mat-card-content>
+    </mat-card>
+</cdk-virtual-scroll-viewport>

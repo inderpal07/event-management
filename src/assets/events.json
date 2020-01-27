@@ -1,0 +1,61 @@
+[{
+    "eventType": "Event 1",
+    "eventImageURL": "./assets/images/profile.jpg",
+    "eventLocation": "Delhi",
+    "eventDateTime": "Mon Jan 27 2020 16:00:16 GMT+0530 (India Standard Time)",
+    "genderAllowed": "Male"
+},{
+    "eventType": "Event 2",
+    "eventImageURL": "./assets/images/profile.jpg",
+    "eventLocation": "Gurgaon",
+    "eventDateTime": "Mon Jan 28 2020 16:00:16 GMT+0530 (India Standard Time)",
+    "genderAllowed": "Female"
+},{
+    "eventType": "Event 3",
+    "eventImageURL": "./assets/images/profile.jpg",
+    "eventLocation": "Ludhiana",
+    "eventDateTime": "Mon Jan 27 2020 16:00:16 GMT+0530 (India Standard Time)",
+    "genderAllowed": "Male"
+},{
+    "eventType": "Event 4",
+    "eventImageURL": "./assets/images/profile.jpg",
+    "eventLocation": "Punjab",
+    "eventDateTime": "Mon Jan 9 2020 16:00:16 GMT+0530 (India Standard Time)",
+    "genderAllowed": "Male"
+},{
+    "eventType": "Event 5",
+    "eventImageURL": "./assets/images/profile.jpg",
+    "eventLocation": "Delhi",
+    "eventDateTime": "Mon Jan 27 2020 16:00:16 GMT+0530 (India Standard Time)",
+    "genderAllowed": "Male, Female"
+},{
+    "eventType": "Event 6",
+    "eventImageURL": "./assets/images/profile.jpg",
+    "eventLocation": "Delhi",
+    "eventDateTime": "Mon Jan 27 2020 16:00:16 GMT+0530 (India Standard Time)",
+    "genderAllowed": "Male"
+},{
+    "eventType": "Event 7",
+    "eventImageURL": "./assets/images/profile.jpg",
+    "eventLocation": "Chandigarh",
+    "eventDateTime": "Mon Feb 27 2020 16:00:16 GMT+0530 (India Standard Time)",
+    "genderAllowed": "Male"
+},{
+    "eventType": "Event 8",
+    "eventImageURL": "./assets/images/profile.jpg",
+    "eventLocation": "Delhi",
+    "eventDateTime": "Mon Jan 27 2020 16:00:16 GMT+0530 (India Standard Time)",
+    "genderAllowed": "Male, Female"
+},{
+    "eventType": "Event 9",
+    "eventImageURL": "./assets/images/profile.jpg",
+    "eventLocation": "Delhi",
+    "eventDateTime": "Mon Jan 27 2020 16:00:16 GMT+0530 (India Standard Time)",
+    "genderAllowed": "Male"
+},{
+    "eventType": "Event 10",
+    "eventImageURL": "./assets/images/profile.jpg",
+    "eventLocation": "Delhi/NCR",
+    "eventDateTime": "Mon Mar 27 2020 16:00:16 GMT+0530 (India Standard Time)",
+    "genderAllowed": "Male"
+}]

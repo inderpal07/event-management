@@ -1,0 +1,16 @@
+.profile-img{
+    height: 100px;
+    width: 100px;
+    padding-left: 15px;
+}
+.virtual-scroll-viewport {
+    height: 550px;
+    border: 1px solid black;
+  }  
+.virtual-scroll-viewport-item {
+    height: 200px;
+}
+.search-filter{
+    float: right;
+    margin: 8px;
+}

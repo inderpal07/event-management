@@ -1,0 +1,36 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Create Event</mat-card-title>
+   </mat-card-header>
+   <mat-card-content>
+        <mat-form-field>
+            <input matInput placeholder="Event Type" [(ngModel)]="event.eventType" required #eventTypeInput="ngModel">
+        </mat-form-field>
+        <br>
+        <div *ngIf="eventTypeInput.invalid && (eventTypeInput.dirty || eventTypeInput.touched)" class="alert alert-danger">
+            <div *ngIf="eventTypeInput.errors.required">
+                *Required
+            </div>
+        </div>
+        <input placeholder="Image" [(ngModel)]="event.eventImageURL" type="file" #imageUrl="ngModel"  accept=".jpg,.png">
+        <br>
+        <mat-form-field>
+            <input matInput placeholder="Location" [(ngModel)]="event.eventLocation">
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <input matInput placeholder="Date" [(ngModel)]="event.eventDateTime" type="date" #dated="ngModel">
+        </mat-form-field>
+        <br>
+        <div *ngIf="dated.invalid && (dated.dirty || dated.touched)" class="alert alert-danger">
+            <div *ngIf="dated.errors.required">
+                *Required
+            </div>
+        </div>
+        <mat-form-field>
+            <input matInput placeholder="Gender Allowed" [(ngModel)]="event.genderAllowed">
+        </mat-form-field>
+        <br>
+        <button mat-raised-button  (click)="createEvent()">Create Event</button>
+    </mat-card-content>
+</mat-card>
