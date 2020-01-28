@@ -13,6 +13,7 @@ import { Location } from '@angular/common';
 export class CreateEventComponent implements OnInit {
 
   event: EventModel;
+  snackBarRef: any;
   constructor(
     private eventService: EventsService,
     private snackBar: MatSnackBar,
@@ -27,7 +28,7 @@ export class CreateEventComponent implements OnInit {
 
   createEvent() {
     this.eventService.createEvent(this.event);
-    const snackBarRef = this.snackBar.open('Event Stored');
+    this.snackBarRef = this.snackBar.open('Event Stored');
     this.router.navigate(['/event-list']);
   }
 

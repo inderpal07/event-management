@@ -14,6 +14,8 @@ export class LoginComponent implements OnInit {
   mobileNumber: string;
   otpList: object;
   otp: string;
+  snackBarRef:any;
+
   constructor(
     private userAuthService: UserAuthenticationService,
     private router: Router,
@@ -35,12 +37,12 @@ export class LoginComponent implements OnInit {
       if (this.otpList[this.mobileNumber] === this.otp) {
         this.router.navigate(['/event-list']);
       } else {
-        const snackBarRef = this.snackBar.open('Invalid OTP');
+        this.snackBarRef = this.snackBar.open('Invalid OTP');
         console.log('Invalid OTP');
       }
     } else {
       console.log('User doesnot exists!');
-      const snackBarRef = this.snackBar.open('User doesnot exists!');
+      this.snackBarRef = this.snackBar.open('User doesnot exists!');
     }
   }
 
