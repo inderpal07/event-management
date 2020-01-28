@@ -18,8 +18,12 @@ export class EventsService {
 
   createEvent(event: EventModel) {
     const pastEvents = JSON.parse(localStorage.getItem('events'));
-    pastEvents.push(event);
-    localStorage.setItem('events', JSON.stringify(pastEvents));
+    if(!pastEvents){
+      localStorage.setItem('events', JSON.stringify([event]));
+    } else {
+      pastEvents.push(event);
+      localStorage.setItem('events', JSON.stringify(pastEvents));
+    }
   }
 
 }
